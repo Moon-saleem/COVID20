@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">COVID 20</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="recoverd">Recoverd</string>
+    <string name="deaths">Deaths</string>
+    <string name="active">Active</string>
+    <string name="world_stats">World Stats</string>
+    <string name="virus_record">Track Countries Record</string>
+    <string name="country_name">Country Name</string>
+    <string name="about_app">About App</string>
+    <string name="discription">Covid 19 app is all about corona virus.We are using coronaapi for getting update from all across the world in this app.App also have ability to show the result of all countries cases,deaths,total cases ,total deaths,and many more information,It update every 10 minute and getting latest result.we think this is the most valuable android app that help you to track the world progress report about corona virus. </string>
+</resources>

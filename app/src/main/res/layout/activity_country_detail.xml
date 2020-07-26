@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".CountryDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/cardView_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/scroll"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linear">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/country_relative"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:id="@+id/country"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvCountry"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="30dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tests"
+                            android:id="@+id/tests"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvTestDetail"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="#046057"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="30dp"/>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/cases_relative"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cases"
+                            android:id="@+id/cases"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tv_detail_Cases"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/cases_recoverd"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recoverd"
+                            android:id="@+id/recoverd"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tv_detail_Recoverd"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/cases_critical"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Critical"
+                            android:id="@+id/critical"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvDetailCritical"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/cases_active"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Active"
+                            android:id="@+id/tvDetailactive"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvActive"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="#330000"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/cases_total_layout"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today Cases"
+                            android:id="@+id/cases_total"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvTodayCasesDetail"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor=" #6666ff"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Deaths"
+                            android:id="@+id/cases_death_total"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:id="@+id/tvTotalDeathDetail"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="#000066"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today Deaths"
+                            android:id="@+id/cases_today_deaths"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvTodayDeathDetail"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor=" #ff3399"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="30dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Population"
+                            android:id="@+id/population"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/tvPopulationDetail"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp"
+                            android:textColor="#ff9900"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/abeezee"
+                            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_purple"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
